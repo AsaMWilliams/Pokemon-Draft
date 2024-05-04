@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="Pokemon Draft"
 
+[editor]
+
+export/convert_text_resources_to_binary=false
+
 [gui]
 
 timers/tooltip_delay_sec=0.0

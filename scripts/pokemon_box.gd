@@ -27,12 +27,12 @@ func _init(reg_id):
 			is_restricted = true
 			restriced_num = 2
 	
-	var file = FileAccess.open("res://regulations/regulation_" + regulation + ".txt", FileAccess.READ)
+	var file = FileAccess.open("res://regulations/regulation_" + regulation + ".tres", FileAccess.READ)
 	var content = file.get_as_text()
 	pokemon_main = content.split("\n")
 	
 	if is_restricted:
-		file = FileAccess.open("res://regulations/restricteds.txt", FileAccess.READ)
+		file = FileAccess.open("res://regulations/restricteds.tres", FileAccess.READ)
 		content = file.get_as_text()
 		pokemon_sub = content.split("\n")
 
