@@ -3,16 +3,23 @@
 [ext_resource type="Script" path="res://scripts/Main.gd" id="1_8bvbc"]
 [ext_resource type="PackedScene" uid="uid://bgq2rim70jq4y" path="res://scenes/ui.tscn" id="2_65jkn"]
 [ext_resource type="Texture2D" uid="uid://bj3hod21fv6ct" path="res://art/background.png" id="2_bgu6h"]
-[ext_resource type="PackedScene" uid="uid://cc2qpqd335isn" path="res://scenes/sprite_grid.tscn" id="3_ewmv7"]
+[ext_resource type="PackedScene" uid="uid://ck8di45c16tag" path="res://scenes/sprite_grid.tscn" id="3_ewmv7"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_8bvbc")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-visible = false
+[node name="Background" type="TextureRect" parent="."]
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("2_bgu6h")
+
+[node name="GrayMask" type="ColorRect" parent="."]
+offset_left = 168.0
+offset_top = 72.0
+offset_right = 908.0
+offset_bottom = 532.0
+scale = Vector2(1.1, 1.1)
+color = Color(0, 0, 0, 0.596078)
 
 [node name="SpriteGrid" parent="." instance=ExtResource("3_ewmv7")]
 

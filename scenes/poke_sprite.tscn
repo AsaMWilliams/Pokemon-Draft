@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://digh8t5mgonpm"]
+
+[ext_resource type="Texture2D" uid="uid://b83q2fjio2fgl" path="res://art/pokemon_sprites/default.png" id="1_mvj7t"]
+
+[node name="PokeSprite" type="TextureRect"]
+offset_right = 120.0
+offset_bottom = 112.0
+tooltip_text = "test"
+texture = ExtResource("1_mvj7t")

@@ -1,4 +1,4 @@
-extends Node2D
+extends GridContainer
 
 var grid_sprites = []
 var default_texture: Texture
@@ -7,7 +7,7 @@ func _ready():
 
 	for i in range(get_child_count()):
 		var child = get_child(i)
-		if child is Sprite2D:
+		if child is TextureRect:
 			child.texture = load("res://art/pokemon_sprites/default.png")
 			grid_sprites.append(child)
 	
@@ -23,3 +23,4 @@ func render(pokemon_box: Array):
 			texture = default_texture
 
 		grid_sprites[i].texture = texture
+		grid_sprites[i].tooltip_text = str(pokemon_box[i])

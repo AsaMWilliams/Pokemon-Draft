@@ -18,3 +18,7 @@ config/icon="res://icon.svg"
 [dotnet]
 
 project/assembly_name="Pokemon Draft"
+
+[gui]
+
+timers/tooltip_delay_sec=0.0

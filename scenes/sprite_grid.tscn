@@ -1,104 +1,88 @@
-[gd_scene load_steps=3 format=3 uid="uid://cc2qpqd335isn"]
+[gd_scene load_steps=3 format=3 uid="uid://ck8di45c16tag"]
 
-[ext_resource type="Script" path="res://scripts/SpriteGrid.gd" id="1_lno10"]
-[ext_resource type="Texture2D" uid="uid://gn7c2y5nwrtv" path="res://art/pokemon_sprites/abomasnow.png" id="2_t0h5s"]
+[ext_resource type="PackedScene" uid="uid://digh8t5mgonpm" path="res://scenes/poke_sprite.tscn" id="1_a7pph"]
+[ext_resource type="Script" path="res://scripts/sprite_grid.gd" id="1_x5gvg"]
 
-[node name="SpriteGrid" type="Node2D"]
-position = Vector2(0, 64)
-script = ExtResource("1_lno10")
+[node name="SpriteGrid" type="GridContainer"]
+offset_left = 168.0
+offset_top = 72.0
+offset_right = 908.0
+offset_bottom = 532.0
+scale = Vector2(1.1, 1.1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 6
+script = ExtResource("1_x5gvg")
+metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(256, 72)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(384, 72)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite2" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(512, 72)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite3" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D4" type="Sprite2D" parent="."]
-position = Vector2(640, 72)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite4" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D5" type="Sprite2D" parent="."]
-position = Vector2(768, 72)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite5" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D6" type="Sprite2D" parent="."]
-position = Vector2(896, 72)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite6" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D7" type="Sprite2D" parent="."]
-position = Vector2(256, 200)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite7" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D8" type="Sprite2D" parent="."]
-position = Vector2(384, 200)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite8" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D9" type="Sprite2D" parent="."]
-position = Vector2(512, 200)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite9" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D10" type="Sprite2D" parent="."]
-position = Vector2(640, 200)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite10" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D11" type="Sprite2D" parent="."]
-position = Vector2(768, 200)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite11" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D12" type="Sprite2D" parent="."]
-position = Vector2(896, 200)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite12" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D13" type="Sprite2D" parent="."]
-position = Vector2(256, 328)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite13" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D14" type="Sprite2D" parent="."]
-position = Vector2(384, 328)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite14" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D15" type="Sprite2D" parent="."]
-position = Vector2(512, 328)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite15" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D16" type="Sprite2D" parent="."]
-position = Vector2(640, 328)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite16" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D17" type="Sprite2D" parent="."]
-position = Vector2(768, 328)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite17" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D18" type="Sprite2D" parent="."]
-position = Vector2(896, 328)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite18" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D19" type="Sprite2D" parent="."]
-position = Vector2(256, 456)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite19" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D20" type="Sprite2D" parent="."]
-position = Vector2(384, 456)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite20" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D21" type="Sprite2D" parent="."]
-position = Vector2(512, 456)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite21" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D22" type="Sprite2D" parent="."]
-position = Vector2(640, 456)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite22" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D23" type="Sprite2D" parent="."]
-position = Vector2(768, 456)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite23" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
 
-[node name="Sprite2D24" type="Sprite2D" parent="."]
-position = Vector2(896, 456)
-texture = ExtResource("2_t0h5s")
+[node name="PokeSprite24" parent="." instance=ExtResource("1_a7pph")]
+layout_mode = 2
