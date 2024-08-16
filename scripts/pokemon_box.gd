@@ -26,6 +26,8 @@ func _init(reg_id):
 			regulation = 'g'
 			is_restricted = true
 			restriced_num = 2
+		5:
+			regulation = 'h'
 	
 	var file = FileAccess.open("res://regulations/regulation_" + regulation + ".tres", FileAccess.READ)
 	var content = file.get_as_text()

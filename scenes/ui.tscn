@@ -15,7 +15,7 @@ text = "Roll"
 offset_left = 128.0
 offset_right = 320.0
 offset_bottom = 64.0
-item_count = 5
+item_count = 6
 selected = 0
 popup/item_0/text = "Select Regulation"
 popup/item_0/id = 0
@@ -27,6 +27,8 @@ popup/item_3/text = "Regulation F"
 popup/item_3/id = 3
 popup/item_4/text = "Regulation G"
 popup/item_4/id = 4
+popup/item_5/text = "Regulation H"
+popup/item_5/id = 5
 
 [node name="CopyToClipboard" type="Button" parent="."]
 offset_left = 832.0
